@@ -1,0 +1,124 @@
+#include <stdio.h>
+#include <windows.h>
+void pos(int x,int y)
+{
+	COORD coord;
+	coord.X=x;
+	coord.Y=y;
+	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),coord);
+}
+
+void ti(int x,int y)
+{
+	char o=254;
+	pos(x,y);
+	putchar(o);
+}
+
+int main()
+{
+	int i;
+	SetConsoleOutputCP(437);
+	//¡°Ì°¡± 
+	ti(2,5);
+	ti(4,4);
+	ti(6,3);
+	ti(8,2);
+	ti(10,3);
+	ti(12,4);
+	ti(14,5);
+	ti(8,4);
+	ti(6,5);
+	ti(8,5);
+	ti(10,5);
+	ti(8,6);
+	ti(6,7);
+	ti(4,8);
+	ti(6,8);
+	ti(8,8);
+	ti(10,8);
+	ti(12,8);
+	ti(4,9);
+	ti(4,10);
+	ti(4,11);
+	ti(4,13);
+	ti(6,12);
+	ti(8,9);
+	ti(8,10);
+	ti(8,11);
+	ti(10,12);
+	ti(12,9);
+	ti(12,10);
+	ti(12,11);
+	ti(12,13);
+	//¡°³Ô¡±
+	ti(20,7);
+	ti(20,8);
+	ti(20,9);
+	ti(20,10);
+	ti(22,7);
+	ti(22,10);
+	ti(24,7);
+	ti(24,8);
+	ti(24,9);
+	ti(24,10);
+	ti(26,11);
+	ti(26,12);
+	ti(26,6);
+	ti(28,5);
+	ti(28,10);
+	ti(28,12);
+	ti(30,2);
+	ti(30,3);
+	ti(30,4);
+	ti(30,6);
+	ti(30,9);
+	ti(30,12);
+	ti(32,4);
+	ti(32,6);
+	ti(32,8);
+	ti(32,12);
+	ti(34,4);
+	ti(34,6);
+	ti(34,7);
+	ti(34,12);
+	ti(36,10);
+	ti(36,11);
+	ti(36,12);
+	//snake
+	ti(42,6);
+	ti(42,7);
+	ti(42,8);
+	ti(42,9);
+	ti(42,12);
+	for(i=3;i<13;i++)
+		ti(44,i);
+	ti(46,6);
+	ti(46,7);
+	ti(46,8);
+	ti(46,9);
+	ti(46,12);
+	ti(48,4);
+	ti(48,5);
+	for(i=3;i<13;i++)
+		ti(50,i);
+	ti(52,3);
+	ti(52,4);
+	ti(52,10);
+	ti(52,12);
+	ti(54,3);
+	ti(54,4);
+	ti(54,9);
+	ti(54,12);
+	ti(56,4);
+	ti(56,8);
+	ti(56,12);
+	ti(58,4);
+	ti(58,5);
+	ti(58,11);
+	ti(58,12);
+	pos(20,15);
+	puts("PRESS EHTER START");  
+	pos(46,16);
+	puts("BY--MR.YUCHANG");
+}
